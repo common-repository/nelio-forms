@@ -1,0 +1,14 @@
+.nelio-forms-field {
+
+	.editor-styles-wrapper &#{&}--checkbox {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__label {
+
+		.editor-styles-wrapper &#{&}--checkbox {
+			padding-left: 0;
+		}
+	}
+}

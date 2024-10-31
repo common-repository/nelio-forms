@@ -1,0 +1,77 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/text",
+	"title": "Text field",
+	"category": "nelio-forms",
+	"icon": "editor-textcolor",
+	"description": "An input text field.",
+	"keywords": [ "input", "field", "text" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "input",
+			"attribute": "id"
+		},
+		"autocomplete": {
+			"type": "string"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"isLabelHidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"maxLength": {
+			"type": "number"
+		},
+		"minLength": {
+			"type": "number"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"readOnly": {
+			"type": "boolean"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"requiresConfirmation": {
+			"type": "boolean",
+			"default": false
+		},
+		"confirmationPlaceholder": {
+			"type": "string"
+		},
+		"size": {
+			"type": "number"
+		},
+		"type": {
+			"type": "string",
+			"default": "text"
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"placeholder": "",
+			"type": "text"
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"style": "file:style-index.css"
+}

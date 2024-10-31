@@ -1,0 +1,32 @@
+.nelio-forms-field__value {
+
+	&#{&}--number {
+		box-sizing: border-box;
+		display: block;
+		float: none;
+		padding: 0.5em;
+		width: 100%;
+	}
+
+	&#{&}--number-slider {
+		box-sizing: border-box;
+		display: block;
+		float: none;
+		padding: 0.5em;
+		width: 100%;
+	}
+
+	&-container {
+		display: flex;
+		align-items: center;
+
+		output {
+			margin-left: 1em;
+
+			* {
+				word-break: normal;
+				word-wrap: normal;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.wp-block-nelio-forms-form .components-placeholder__label .dashicons-feedback {
+	margin-right: 15px;
+}
+
+.nelio-forms__editor {
+	&#{&}--ready {
+		padding: 1em;
+		border: 1px solid #e0e0e0;
+
+		&.is-selected {
+			padding-bottom: 2em;
+		}
+
+		.block-editor-block-content-overlay:hover:not(.is-dragging-blocks).overlay-active::before,
+		.block-editor-block-content-overlay.parent-highlighted.overlay-active::before {
+			background: none;
+			box-shadow: none;
+		}
+
+		.block-editor-default-block-appender {
+			height: auto !important;
+		}
+
+		&:not(.is-selected) .nelio-forms-field:last-of-type {
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+.nelio-forms-choice {
+	width: 100%;
+	display: flex;
+	gap: 1.5em;
+
+	&__form-selector,
+	&__form-creator {
+		flex-grow: 1;
+		width: 100%;
+	}
+
+	&__separator {
+		border-left: 1px solid #1e1e1e;
+		height: 100%;
+	}
+
+	.components-form-token-field .components-form-token-field__remove-token {
+		padding: 0;
+	}
+}
+
+.nelio-forms-field {
+	margin: 1em 0;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.components-textarea-control__input {
+		height: 120px;
+		resize: none;
+	}
+}

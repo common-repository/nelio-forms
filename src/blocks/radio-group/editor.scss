@@ -1,0 +1,39 @@
+.nelio-forms-field {
+
+	&#{&}--radio-group {
+		display: block;
+	}
+}
+
+.nelio-forms-field__item {
+
+	.editor-styles-wrapper &#{&}--radio-group {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&-value {
+		padding: 6px;
+	}
+
+	&-label {
+
+		.components-text-control__input[type="text"] {
+			background: transparent;
+			border-color: transparent;
+			border-radius: 0;
+		}
+	}
+}
+
+// Hack to preview properly the horizontal layout
+.block-editor-block-preview__content-iframe .is-style-horizontal-layout {
+
+	.nelio-forms-field__item-label input[type="text"] {
+		width: 5em;
+	}
+
+	.nelio-forms-field__item-action {
+		display: none;
+	}
+}

@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/number",
+	"title": "Number field",
+	"category": "nelio-forms",
+	"icon": "image-flip-vertical",
+	"description": "An input number field.",
+	"keywords": [ "input", "field", "number" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "input",
+			"attribute": "id"
+		},
+		"autocomplete": {
+			"type": "string"
+		},
+		"customUnit": {
+			"type": "string"
+		},
+		"customUnitPosition": {
+			"type": "string"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"isLabelHidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"min": {
+			"type": "number"
+		},
+		"max": {
+			"type": "number"
+		},
+		"showCustomUnit": {
+			"type": "boolean",
+			"default": false
+		},
+		"step": {
+			"type": "number",
+			"default": 1
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"readOnly": {
+			"type": "boolean"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"type": {
+			"type": "string",
+			"default": "number"
+		},
+		"value": {
+			"type": "number"
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"placeholder": "",
+			"type": "number"
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"style": "file:style-index.css"
+}

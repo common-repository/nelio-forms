@@ -1,0 +1,74 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/datetime",
+	"title": "Date/Time field",
+	"category": "nelio-forms",
+	"icon": "calendar",
+	"description": "An input date/time field.",
+	"keywords": [ "input", "field", "datetime" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "input",
+			"attribute": "id"
+		},
+		"autocomplete": {
+			"type": "string"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"isLabelHidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"min": {
+			"type": "string"
+		},
+		"max": {
+			"type": "string"
+		},
+		"step": {
+			"type": "number",
+			"default": 60
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"readOnly": {
+			"type": "boolean"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"type": {
+			"type": "string",
+			"default": "datetime"
+		},
+		"value": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "Date/Time",
+			"placeholder": "",
+			"type": "datetime"
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"style": "file:style-index.css"
+}

@@ -1,0 +1,83 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/radio-group",
+	"title": "Radio group field",
+	"category": "nelio-forms",
+	"icon": "marker",
+	"description": "Several radio button items. Only one can be selected at a time.",
+	"keywords": [ "input", "field", "radio", "choice" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "div.nelio-forms-field__value--radio-group",
+			"attribute": "id"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"isLabelHidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"type": {
+			"type": "string",
+			"default": "radio-group"
+		},
+		"options": {
+			"type": "array",
+			"default": [
+				{
+					"label": "First",
+					"checked": true
+				},
+				{
+					"label": "Second",
+					"checked": false
+				},
+				{
+					"label": "Third",
+					"checked": false
+				}
+			]
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"type": "radio-group",
+			"options": [
+				{
+					"label": "First",
+					"checked": true
+				},
+				{
+					"label": "Second",
+					"checked": false
+				},
+				{
+					"label": "Third",
+					"checked": false
+				}
+			]
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"editorStyle": "file:index.css",
+	"style": "file:style-index.css"
+}

@@ -1,0 +1,46 @@
+.nelio-forms-form .nelio-forms-field {
+
+	&__value--text,
+	&__value--email,
+	&__value--password,
+	&__value--tel,
+	&__value--url,
+	&__value--textarea,
+	&__value--date,
+	&__value--time,
+	&__value--datetime,
+	&__value--select,
+	&__value--number {
+		background: var(--nelio-forms-unfocused-field-background, #00f);
+		border: 1px solid var(--nelio-forms-unfocused-field-border, #00f);
+		border-radius: 0;
+		color: var(--nelio-forms-field-text, #00f);
+		font-size: 16px;
+		margin: 0;
+		padding: 12px;
+		width: 100%;
+		transition:
+			background 120ms ease-in-out,
+			border 120ms ease-in-out;
+
+		&:focus {
+			background: var(--nelio-forms-focused-field-background, #00f);
+			border-color: var(--nelio-forms-focused-field-border, #00f);
+			outline: 2px solid var(--nelio-forms-outline, #00f);
+			outline-offset: 1px;
+		}
+
+		&::placeholder {
+			color: var(--nelio-forms-field-placeholder, #00f);
+		}
+	}
+
+	&__label {
+		color: var(--nelio-forms-label, #00f);
+		margin-bottom: 10px;
+	}
+}
+
+.nelio-forms-field__label.nelio-forms-field__label--required::after {
+	color: var(--nelio-forms-required-marker, #00f);
+}

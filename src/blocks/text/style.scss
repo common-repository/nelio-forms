@@ -1,0 +1,24 @@
+.nelio-forms-field__value {
+
+	&#{&}--text,
+	&#{&}--email,
+	&#{&}--password,
+	&#{&}--tel,
+	&#{&}--url {
+		box-sizing: border-box;
+		display: block;
+		float: none;
+		padding: 0.5em;
+		width: 100%;
+	}
+}
+
+.nelio-forms-field__password--confirmation {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+
+	> div {
+		flex-grow: 1;
+	}
+}

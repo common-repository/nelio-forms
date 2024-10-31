@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/form",
+	"title": "Form",
+	"category": "nelio-forms",
+	"icon": "feedback",
+	"description": "A contact form.",
+	"keywords": [ "form", "contact" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"ref": {
+			"type": "number"
+		},
+		"fakeExample": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"reusable": false
+	},
+	"example": {
+		"attributes": {
+			"fakeExample": true
+		},
+		"innerBlocks": [
+			{
+				"name": "nelio-forms/text",
+				"attributes": {
+					"label": "Subject",
+					"placeholder": "Type here…"
+				}
+			},
+			{
+				"name": "nelio-forms/textarea",
+				"attributes": {
+					"label": "Message",
+					"placeholder": "Type here…"
+				}
+			},
+			{
+				"name": "core/buttons",
+				"innerBlocks": [
+					{
+						"name": "core/button",
+						"attributes": {
+							"text": "Submit",
+							"nfIsSubmit": true
+						},
+						"innerBlocks": []
+					}
+				]
+			}
+		]
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"editorStyle": "file:index.css",
+	"style": "file:style-index.css"
+}

@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/textarea",
+	"title": "Text area field",
+	"category": "nelio-forms",
+	"icon": "text",
+	"description": "A multi-line text input field.",
+	"keywords": [ "input", "text", "textarea" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "textarea",
+			"attribute": "id"
+		},
+		"cols": {
+			"type": "number"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"isLabelHidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"maxLength": {
+			"type": "number"
+		},
+		"minLength": {
+			"type": "number"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"readonly": {
+			"type": "boolean"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"rows": {
+			"type": "number"
+		},
+		"type": {
+			"type": "string",
+			"default": "textarea"
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"placeholder": ""
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"style": "file:style-index.css"
+}

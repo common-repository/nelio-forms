@@ -1,0 +1,33 @@
+.nelio-forms-field__item {
+
+	&#{&}--radio-group {
+		display: block;
+	}
+
+	&-label {
+		&#{&}--radio-group {
+			display: inline;
+			font-weight: inherit;
+			padding-left: 0.5em;
+		}
+	}
+
+	&-value {
+		#{&}--radio-group {
+			display: inline-block;
+			height: auto;
+			vertical-align: baseline;
+			width: auto;
+		}
+	}
+}
+
+.is-style-horizontal-layout .nelio-forms-field__value {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.nelio-forms-field__item {
+		margin-right: 1em;
+	}
+}

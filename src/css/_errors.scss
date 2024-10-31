@@ -1,0 +1,18 @@
+.nelio-forms-form .nelio-forms-field {
+
+	&__value--error:not(:focus) {
+		border-color: var(--nelio-forms-error, #00f);
+	}
+
+	&__error-label,
+	&__error-label * {
+		color: var(--nelio-forms-error, #00f);
+	}
+}
+
+.nelio-forms__response.nelio-forms__response--fail {
+
+	background-color: none;
+	border: none;
+	color: var(--nelio-forms-error, #00f);
+}

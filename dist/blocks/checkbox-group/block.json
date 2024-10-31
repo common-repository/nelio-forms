@@ -1,0 +1,79 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/checkbox-group",
+	"title": "Checkbox group field",
+	"category": "nelio-forms",
+	"icon": "yes",
+	"description": "Several checkbox items.",
+	"keywords": [ "input", "field", "checkbox" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "div.nelio-forms-field__value--checkbox-group",
+			"attribute": "id"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"type": {
+			"type": "string",
+			"default": "checkbox-group"
+		},
+		"options": {
+			"type": "array",
+			"default": [
+				{
+					"label": "First",
+					"checked": false
+				},
+				{
+					"label": "Second",
+					"checked": false
+				},
+				{
+					"label": "Third",
+					"checked": false
+				}
+			]
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"type": "checkbox-group",
+			"options": [
+				{
+					"label": "First",
+					"checked": false
+				},
+				{
+					"label": "Second",
+					"checked": false
+				},
+				{
+					"label": "Third",
+					"checked": false
+				}
+			]
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"editorStyle": "file:index.css",
+	"style": "file:style-index.css"
+}

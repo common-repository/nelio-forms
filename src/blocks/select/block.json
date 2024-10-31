@@ -1,0 +1,102 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/select",
+	"title": "Select field",
+	"category": "nelio-forms",
+	"icon": "arrow-down-alt2",
+	"description": "A drop-down list of options.",
+	"keywords": [ "input", "field", "select" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "select",
+			"attribute": "id"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"isLabelHidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"isEditingOptions": {
+			"type": "boolean",
+			"default": true
+		},
+		"label": {
+			"type": "string"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"type": {
+			"type": "string",
+			"default": "select"
+		},
+		"options": {
+			"type": "array",
+			"default": [
+				{
+					"label": "First",
+					"value": "first",
+					"selected": false,
+					"disabled": false
+				},
+				{
+					"label": "Second",
+					"value": "second",
+					"selected": false,
+					"disabled": false
+				},
+				{
+					"label": "Third",
+					"value": "third",
+					"selected": false,
+					"disabled": false
+				}
+			]
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"type": "select",
+			"options": [
+				{
+					"label": "First",
+					"value": "first",
+					"selected": false,
+					"disabled": false
+				},
+				{
+					"label": "Second",
+					"value": "second",
+					"selected": false,
+					"disabled": false
+				},
+				{
+					"label": "Third",
+					"value": "third",
+					"selected": false,
+					"disabled": false
+				}
+			]
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"editorStyle": "file:index.css",
+	"style": "file:style-index.css"
+}

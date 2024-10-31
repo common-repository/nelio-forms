@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array( 'nelio-forms-gutenberg', 'lodash', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-compose', 'wp-core-data', 'wp-data', 'wp-element', 'wp-hooks', 'wp-i18n', 'wp-primitives'), 'version' => 'd513c92c2f897e5e993a628e7b33b093');

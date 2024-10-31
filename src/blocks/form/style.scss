@@ -1,0 +1,80 @@
+.nelio-forms-field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1em;
+
+	&#{&}--hidden,
+	&#{&}--hidden * {
+		border: 0;
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		word-wrap: normal !important;
+	}
+
+	&__label {
+		font-weight: 700;
+
+		&#{&}--hidden {
+			border: 0;
+			clip: rect(1px, 1px, 1px, 1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		&#{&}--required:after {
+			content: "*";
+			color: #f00;
+			margin-left: 0.2em;
+		}
+	}
+
+	&__error-label > div {
+		display: block;
+		color: #900;
+		font-size: 0.975em;
+		float: none;
+		cursor: default;
+	}
+}
+
+.nelio-forms__response {
+	background: #fff;
+	display: none;
+	margin-top: 1em;
+	padding: 0.2em 0.5em;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 3px;
+
+	&#{&}--success {
+		border-color: #4b8d4b;
+		display: block;
+	}
+
+	&#{&}--fail {
+		border-color: #900;
+		color: #900;
+		display: block;
+	}
+}
+
+.nelio-forms-form--hidden {
+
+	.nelio-forms-field,
+	.nelio-forms-submit {
+		display: none;
+	}
+
+}

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "nelio-forms/checkbox",
+	"title": "Checkbox field",
+	"category": "nelio-forms",
+	"icon": "yes",
+	"description": "An input checkbox field.",
+	"keywords": [ "input", "field", "checkbox" ],
+	"version": "1.0.0",
+	"textdomain": "nelio-forms",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"htmlId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "input",
+			"attribute": "id"
+		},
+		"checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string"
+		},
+		"required": {
+			"type": "boolean",
+			"default": true
+		},
+		"type": {
+			"type": "string",
+			"default": "checkbox"
+		}
+	},
+	"example": {
+		"attributes": {
+			"label": "",
+			"type": "checkbox"
+		}
+	},
+	"viewScript": "file:view.js",
+	"editorScript": "file:index.js",
+	"editorStyle": "file:index.css",
+	"style": "file:style-index.css"
+}

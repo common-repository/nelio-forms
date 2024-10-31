@@ -1,0 +1,23 @@
+.nelio-forms-field {
+
+	&#{&}--checkbox {
+		display: block;
+	}
+
+	&__label {
+		&#{&}--checkbox {
+			display: inline;
+			font-weight: inherit;
+			padding-left: 0.5em;
+		}
+	}
+
+	&__value {
+		#{&}--checkbox {
+			display: inline-block;
+			height: auto;
+			vertical-align: baseline;
+			width: auto;
+		}
+	}
+}
